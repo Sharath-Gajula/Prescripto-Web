@@ -1,0 +1,29 @@
+/* for adding the best visual of Ui looks nice adding custom  fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    font-family: Outfit;
+}
+
+
+/*
+when u click on the nav items it will be a bar*/
+.active hr{
+    @apply block
+}
+
+/* for removing the scroll bar in specialitymenu */
+::-webkit-scrollbar{
+    @apply hidden
+}
+
+@media (max-width:740px){
+    .active p{
+        @apply text-white bg-primary
+    }
+}
